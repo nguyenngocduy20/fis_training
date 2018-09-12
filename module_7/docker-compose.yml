@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  php-docker-app-compose:
+    image: php:7.2-apache
+    container_name: php-docker-app-compose
+    volumes:
+      - ./php/src/:/var/www/html/
+    ports:
+      - 8082:80
+
